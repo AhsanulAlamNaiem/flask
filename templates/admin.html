@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Admin Dashboard</h1>
+        </header>
+        <nav class="dashboard-sidebar">
+            <ul>
+                <li><a href="#editor">Text Editor</a></li>
+                <li><a href="#category">Category Selection</a></li>
+                <li><a href="#image-upload">Image Upload</a></li>
+            </ul>
+        </nav>
+        <main class="dashboard-content">
+            <section id="editor" class="dashboard-section">
+                <h2>Text Editor</h2>
+                <div class="editor-toolbar">
+                    <button onclick="formatText('bold')">Bold</button>
+                    <button onclick="formatText('italic')">Italic</button>
+                    <button onclick="formatText('underline')">Underline</button>
+                    <button onclick="formatText('strikeThrough')">Strike</button>
+                    <select onchange="formatText('fontSize', this.value)">
+                        <option value="1">Small</option>
+                        <option value="3" selected>Normal</option>
+                        <option value="5">Large</option>
+                        <option value="7">Huge</option>
+                    </select>
+                </div>
+                <div id="text-editor" contenteditable="true" class="text-editor"></div>
+            </section>
+            <section id="category" class="dashboard-section">
+                <h2>Category Selection</h2>
+                <select id="category-selection">
+                    <option value="news">News</option>
+                    <option value="blog">Blog</option>
+                    <option value="tutorial">Tutorial</option>
+                    <option value="review">Review</option>
+                </select>
+            </section>
+            <section id="image-upload" class="dashboard-section">
+                <h2>Image Upload</h2>
+                <input type="file" id="image-upload-input" accept="image/*">
+                <div id="image-preview"></div>
+            </section>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
