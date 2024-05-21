@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for, render_template,send_file
 from flask_talisman import Talisman
-
+import json
 
 app = Flask(__name__)
 # Talisman(app)
@@ -18,10 +18,13 @@ def portfolio(name):
 def admin():
     return(render_template("admin.html"))  
 
-@app.route("/kaizen")
+@app.route("/kaizen_data_version")
 def kaizen():
-    file="res/kaizen SUST.pptx"
-    return( send_file(file,as_attachment=True))
+    file="res/dataversion.json"
+    with open(file,"r") as f:
+        data = json.load(f)
+
+    return(data["currentversion"])
 
 @app.route("/members")
 def members():
