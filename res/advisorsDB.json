@@ -1,0 +1,28 @@
+[
+{"id":10,
+"Name":"Dr Md Ariful Islam",
+"dept":"IPE",
+"desgn":"Professor",
+"email":"arif-ipe@sust.edu",
+"phone":1727151188,
+"url":"https://www.sust.edu/d/ipe/faculty-profile-detail/312",
+"img":"adv_kaizen10"},
+
+{"id":11,
+"Name":"Md. Mahmud-Or-Rashid",
+"dept":"Mechanical Engineering",
+"desgn":"Assistant Professor",
+"email":"mmrashid-mee@sust.edu",
+"phone":1758639844,
+"url":"https://www.sust.edu/d/mee/faculty-profile-detail/684",
+"img":"adv_kaizen11"},
+
+{"id":12,
+"Name":"Md. Mehedi Hasan Kibria",
+"dept":"IPE",
+"desgn":"Assistant Professor",
+"email":"kibria-ipe@sust.edu",
+"phone":1914790276,
+"url":"https://www.sust.edu/d/ipe/faculty-profile-detail/626",
+"img":"adv_kaizen12"}
+]

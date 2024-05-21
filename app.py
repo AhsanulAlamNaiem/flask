@@ -3,7 +3,7 @@ from flask_talisman import Talisman
 
 
 app = Flask(__name__)
-Talisman(app)
+# Talisman(app)
 
 @app.route("/")
 
@@ -15,13 +15,25 @@ def portfolio(name):
     return(render_template("portfolio.html"))
 
 @app.route("/admin")
-
 def admin():
     return(render_template("admin.html"))  
 
 @app.route("/kaizen")
 def kaizen():
     file="res/kaizen SUST.pptx"
+    return( send_file(file,as_attachment=True))
+
+@app.route("/members")
+def members():
+    file="res/memberDB.json"
+    return( send_file(file,as_attachment=True))
+@app.route("/committee")
+def committee():
+    file="res/committeeDB.json"
+    return( send_file(file,as_attachment=True))
+@app.route("/advisors")
+def advisors():
+    file="res/advisorsDB.json"
     return( send_file(file,as_attachment=True))
 
 if __name__ =="__main__":
