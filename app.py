@@ -6,13 +6,8 @@ app = Flask(__name__)
 # Talisman(app)
 
 @app.route("/")
-
 def home():
     return(render_template("home.html"))
-
-@app.route("/<name>")
-def portfolio(name):
-    return(render_template("portfolio.html"))
 
 @app.route("/admin")
 def admin():
@@ -24,7 +19,7 @@ def kaizen():
     with open(file,"r") as f:
         data = json.load(f)
 
-    return(data["currentversion"])
+    return(str(data["currentversion"]))
 
 @app.route("/members")
 def members():
