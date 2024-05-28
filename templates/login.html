@@ -1,0 +1,18 @@
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p>{{msg}}</p>
+        {% endfor%}
+    {% endif %}
+{% endwith %}
+
+    <div class="form-container">
+        <form action="#" method="POST">
+            <h2>User Registration</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
