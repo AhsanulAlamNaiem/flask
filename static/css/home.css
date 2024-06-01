@@ -1,0 +1,70 @@
+/* Ensure the parent div (wide) has a gray background */
+body{
+  background: rgb(255, 255, 255);
+  display: flex;
+}
+
+.home_text{
+  margin-left: 80px;
+}
+.home_div {
+    padding-top: 70px;
+    padding-left: 20px;
+    background-color: #F4F4F4;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+.middle-column{
+  max-width: 1000px;
+  }
+.home_text h3,h2,h3 {
+  font-size: 48;
+  font-weight: bold;
+}
+
+.home_text p{
+  margin-top: 19px;
+  font-size: 16;
+  text-align: justify;
+}
+
+img{
+  height: 400px;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+
+.home_text input{
+  color: rgb(0, 0, 0);
+  margin-top: 13px;
+  margin-bottom: 50px;
+  width: 150px;
+  height: 50px;
+  font-size: 16;
+  background-color: #FFB400;
+  border: none;
+  border-radius:5px;
+}
+
+.iframe{
+  height: 100%;
+  width: 1000px;
+}
+
+.lef_summery{
+  width: 200px;
+  height: 300px;
+  background-color: #F4F4F4;
+  min-width: 250px;
+}
+
+.right_summery{
+  width: 100px;
+  height: 300px;
+  background-color: #F4F4F4;
+  min-width: 100px;
+}

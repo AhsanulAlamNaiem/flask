@@ -1,0 +1,14 @@
+.education{
+    max-width: 1000px;
+}
+
+.education_items{
+    display: flex;
+}
+.education_item{
+    display: flex;
+}
+
+.head{
+    text-align: center;
+}

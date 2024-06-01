@@ -1,0 +1,46 @@
+.head{
+    text-align: center;
+    margin-top: 15px;
+}
+.head h3{
+    font-weight: bold;
+}
+.head p{
+    color:#767676;
+    font-size: 15;
+}
+
+.serviceitem .box{
+    text-align: center;
+    background-color: #F4F4F4;
+    flex-direction:column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text inside the container */
+    border-radius: 15px;
+    display: flex;
+    flex-direction:column;
+    margin: 10px 5px;
+    padding-top: 10px;
+}
+
+body{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.serviceitem{
+    float: left;
+}
+
+.serviceitem h4{
+    margin-top:20px;
+}
+
+.centered-box {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.mother{
+    background-color: #F4F4F4;
+}
