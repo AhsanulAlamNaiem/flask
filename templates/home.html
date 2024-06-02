@@ -17,117 +17,25 @@
 
     <!-- +++++++ main section -->
     <div class="middle-column">
-        <!-- ++++++++ landing part -->
-        <div class="row home_div main">
-            <div class="row">
-                <div class="col-7 home_text">
-                    <h3>I'm am Md. Ahsanul Alam Naiem</h3>
-                    <h2 style="color:#FFB400">Industrial and Production</h2>
-                    <h3> Engineer</h3>
+        <!-- ++++++++ intro part -->
+        <div class="row intro main_section">
+            <div class="col-7 home_text">
+                <h3>I'm am Md. Ahsanul Alam Naiem</h3>
+                <h2 style="color:#FFB400">Industrial and Production</h2>
+                <h3> Engineer</h3>
 
-                    <p class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eveniet doloribus enim laboriosam ratione sapiente. Rerum, natus fugiat ipsa blanditiis illum eos quidem qui nisi magnam, corrupti aut temporibus odit!</p>
-                    <input class="button" type="button" value="Hire Me >">
-                </div>
-                <div class = "col-1" id = "standing_image">
-                    <!-- <img src="{{ url_for('static', filename='images/naiem.png')}}"> -->
-                    <img src="../static/images/naiem.png">
-                </div>
+                <p class="col-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eveniet doloribus enim laboriosam ratione sapiente. Rerum, natus fugiat ipsa blanditiis illum eos quidem qui nisi magnam, corrupti aut temporibus odit!</p>
+                <input class="button" type="button" value="Hire Me >">
+            </div>
+            <div class = "col-1" id = "standing_image">
+                <!-- <img src="{{ url_for('static', filename='images/naiem.png')}}"> -->
+                <img src="../static/images/naiem.png">
             </div>
         </div>
-        <!-- ---------landing part Ended -->
+        <!-- ---------intro part Ended -->
 
-
-        <div class="services main">
-            <div class="head offset-3 col-6">
-                <h3>My Services</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quasi assumenda voluptas laboriosam quos.</p>
-            </div>
-
-            <div class="item_container">
-                {% for service  in services %}
-                <div class="item col-4">
-                    <div class="box">
-                        <div class="centered-box" style="height: 50px;width: 50px;background-color: burlywood;"></div>
-                        <h4>{{service[0]}}</h4>
-                        <p>{{service[1]}}</p>
-                    </div>
-                </div>
-                {%endfor%}
-            </div>
-
-
-        </div>
-
-        <div class = "education main"><!--Education STarted-->
-            <div class = 'head offset-col-3 col6'>
-                <h3>education</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officia!</p>
-            </div>
-    
-            <div class="item_container">
-                {% for item  in education %}
-                <div class = "item">
-                    <div class = "Left col-5">
-                        <h5>{{item[0]}}</h5>
-                        <p>{{item[1]}} - {{item[2]}}</p>
-                    </div>
-                    <div class = "right col-7">
-                        <h5>{{item[3]}}</h5>
-                        <p>{{item[4]}}</p>
-                    </div>
-                </div>
-                {%endfor%}
-            </div>
-        </div><!--Education ended-->
-
-
-        <div class = "certificates main"><!--Education STarted-->
-            <div class = 'head offset-col-3 col6'>
-                <h3>Professional Trainings & Certificates</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officia!</p>
-            </div>
-    
-            <div class="item_container">
-                {% for item  in certificates %}
-                <div class = "item">
-                    <div class = "Left col-5">
-                        <h5>{{item[0]}}</h5>
-                        <p>{{item[1]}}</p>
-                    </div>
-                    <div class = "right col-7">
-                        <h5>{{item[0]}}</h5>
-                        <p>{{item[3]}}</p>
-                    </div>
-                </div>
-                {%endfor%}
-            </div>
-        </div><!--Education ended-->
-
-
-        <div class = "contact main">
-            <h3>Leave us Your Info to Contact</h3>
-            <form>
-                <p>Your full Name</p>
-                <input class="col-12" type="text", name = "name">
-
-                <p>Your Email</p>
-                <input class="col-12" type="text", name = "mail">
-
-                <p>Subject</p>
-                <input class="col-12" type="text", name = "subject">
-
-                <p>Your Message</p>
-                <input class="col-12" type="text", name = "message">
-
-                <input class="button" type = "button" name = "submit" value = "Send Message">
-            </form>
-        </div>
-
-    </div><!--Middle column ended-->
-
-    <!-- ++++++++ Right manue Started -->
-    <div class="right_column"><div class="right_summery"></div></div>
-    <!-- -------- Right manue Ended -->
-
+    <footer>
+        <p>&copy; 2024 My Basic HTML Page</p>
+    </footer>
 </body>
 </html>

@@ -1,123 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Page</title>
-    <!-- <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='css/home.css')}}"> -->
-        <!-- <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='css/bootstrap.css')}}"> -->
-    <link rel="stylesheet" type ="text/css" href="../static/css//bootstrap.css">
-    <link rel="stylesheet" type ="text/css" href="../static/css/home.css">
-</head>
-<body>
-    <!--+++++++++ Left Manue started -->
-    <!-- -------- Left manue Ended -->
 
-    <!-- ++++++++ Right manue Started -->
-    <!-- -------- Right manue Ended -->
+<div class="main services">
+    <div class="head offset-3 col-6">
+        <h3>My Services</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos quasi assumenda voluptas laboriosam quos.</p>
+    </div>
 
-    <!-- +++++++ main section -->
-    <div class="container-flui">
-
-    <div class="row">
-        <div class="left-manue col-2"></div>
-        <!-- ++++++++ landing part -->
-        <div class="middle-column col-9">
-            <div class="row">
-                <div class="col-8 home_text">
-                    <H3>I'm am Md. Ahsanul Alam Naiem </br> Industrial and Production <br> Engineer</H3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eveniet doloribus enim laboriosam ratione sapiente. Rerum, natus fugiat ipsa blanditiis illum eos quidem qui nisi magnam, corrupti aut temporibus odit!</p>
-                    <input type="button" value="Hire Me >">
-                </div>
-                <div class = "col-1" id = "standing_image">
-                    <!-- <img src="{{ url_for('static', filename='images/naiem.png')}}"> -->
-                    <img src="../static/images/naiem.png">
-                </div>
+    <div class="item_container">
+        {% for service  in services %}
+        <div class="item">
+            <div class="box">
+                <div class="centered-box" style="height: 50px;width: 50px;background-color: burlywood;"></div>
+                <h4>{{service[0]}}</h4>
+                <p>{{service[1]}}</p>
             </div>
         </div>
-        <!-- ---------landing part Ended -->
-        <div class="right-manue col-1"></div>
+        {%endfor%}
     </div>
 
 
+</div>
 
-        <!-- +++++++ My services -->
-        <div class="services">
-            <h3>My services</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatem, dolore magni non mollitia, amet quas ea corrupti cumque adipisci maiores aut quaerat nobis eaque libero vitae, voluptatibus necessitatibus modi.</p>
-            <div class="service_item">
-                <img src = "">
-                <h5>Data Analysis</h5>
-                <p>Statistics, Powser Bi, Python</p>
-            </div>    
-        </div>
-        <!-- ------- My services End -->
-
-        <!-- +++++++ portfolio -->
-        <div class = "portfolio">
-            <div class="category_navs"></div>
-            <div class="portfoli_items">
-                <div class="Portfolio_items">
-                    <img src = "">
-                    <div class = "portfolio_item_descriptio">
-                        <h5>Supply chain data Analysis</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ------- Portfolio ended -->
-        
-        <!-- ++++++++ Education -->
-        <div class = "education">
-            <h3>Work History</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officia!</p>
-
-            <div class="education_items">
-                <div class = "education_item">
-                    <div class = "Left">
-                        <h5>Lorem, ipsum dolor.</h5>
-                        <p>Lorem, ipsum.</p>
-                    </div>
-                    <div class = "right">
-                        <h5> Lorem ipsum dolor sit amet.</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel amet similique temporibus praesentium, eos esse quis voluptatum! Odio, facere fuga!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- --------Education Ended -->
-
-
-        <!-- +++++++++ contact info -->
-        <div class = "contact">
-            <form>
-                <p>Your full Name</p>
-                <input type="text", name = "name">
-
-                <p>Your Email</p>
-                <input type="text", name = "mail">
-
-                <p>Subject</p>
-                <input type="text", name = "subject">
-
-                <p>Your Message</p>
-                <input type="text", name = "message">
-
-                <input type = "button" name = "submit" value = "Send Message">
-            </form>
-        </div>
-        <!-- --------- Contact info Ended -->
-
+<div class = "education main"><!--Education STarted-->
+    <div class = 'head offset-col-3 col6'>
+        <h3>education</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officia!</p>
     </div>
-    <!-- ------- Main section Ended -->
+
+    <div class="item_container">
+        {% for item  in education %}
+        <div class = "item">
+            <div class = "Left col-5">
+                <h5>{{item[0]}}</h5>
+                <p>{{item[1]}} - {{item[2]}}</p>
+            </div>
+            <div class = "right col-7">
+                <h5>{{item[3]}}</h5>
+                <p>{{item[4]}}</p>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div><!--Education ended-->
+
+
+<div class = "certificates main"><!--Education STarted-->
+    <div class = 'head offset-col-3 col6'>
+        <h3>Professional Trainings & Certificates</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officia!</p>
+    </div>
+
+    <div class="item_container">
+        {% for item  in certificates %}
+        <div class = "item">
+            <div class = "Left col-5">
+                <h5>{{item[0]}}</h5>
+                <p>{{item[1]}}</p>
+            </div>
+            <div class = "right col-7">
+                <h5>{{item[0]}}</h5>
+                <p>{{item[3]}}</p>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div><!--Education ended-->
+
+
+<div class = "contact main">
+    <h3>Leave us Your Info to Contact</h3>
+    <form>
+        <p>Your full Name</p>
+        <input class="col-12" type="text", name = "name">
+
+        <p>Your Email</p>
+        <input class="col-12" type="text", name = "mail">
+
+        <p>Subject</p>
+        <input class="col-12" type="text", name = "subject">
+
+        <p>Your Message</p>
+        <input class="col-12" type="text", name = "message">
+
+        <input class="button" type = "button" name = "submit" value = "Send Message">
+    </form>
+</div>
+
+</div><!--Middle column ended-->
+
+<!-- ++++++++ Right manue Started -->
+<div class="right_column"><div class="right_summery"></div></div>
+<!-- -------- Right manue Ended -->
 
 
 
 
 
-    <footer>
-        <p>&copy; 2024 My Basic HTML Page</p>
-    </footer>
 </body>
 </html>

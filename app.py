@@ -7,7 +7,7 @@ app.secret_key = "hello"
 app.permanent_session_lifetime = timedelta(minutes=13)
 
 conn= sqlite3.connect("./res/portfoliodb.db")
-
+# random comment
 @app.route("/")
 def home():
     db = sqlite3.connect('./res/portfoliodb.db')
